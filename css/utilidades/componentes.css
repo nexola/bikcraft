@@ -1,0 +1,28 @@
+.botao {
+  color: var(--cor-p-5);
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.333;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #ffbf00, #f2a50c);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 16px 32px;
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #d59317);
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+.ponto {
+  color: var(--cor-p-1);
+}
