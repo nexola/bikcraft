@@ -1,0 +1,63 @@
+.depoimento {
+  background: var(--cor-p-1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 80px;
+}
+
+.ana-julia-foto img {
+  border-radius: 0px;
+}
+
+.depoimento p {
+  padding-bottom: 32px;
+  padding-right: 40px;
+  color: var(--cor-p-5);
+  font-family: Merriweather;
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.333;
+  max-width: 27ch;
+}
+
+.depoimento span {
+  color: var(--cor-p-4);
+}
+
+.citacao {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 1200px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-left: 20px;
+  }
+
+  .depoimento img {
+    display: none;
+  }
+
+  .depoimento p {
+    font-size: 2rem;
+    max-width: max-content;
+    padding-bottom: 12px;
+  }
+
+  .citacao {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento p {
+    font-size: 1.5rem;
+  }
+
+  .depoimento span {
+    font-size: 1rem;
+  }
+}
