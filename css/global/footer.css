@@ -27,6 +27,17 @@
 
 .footer p {
   padding-bottom: 36px;
+  position: relative;
+}
+
+.footer p::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 2px;
+  background-color: var(--cor-11);
+  position: absolute;
+  margin-top: 18px;
 }
 
 .footer li {
@@ -60,6 +71,10 @@ footer h4 {
 
   .footer p {
     padding-bottom: 16px;
+  }
+
+  .footer p::after {
+    display: none;
   }
 
   .info li {
