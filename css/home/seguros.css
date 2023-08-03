@@ -11,10 +11,9 @@
 
 .seguros-planos {
   display: flex;
-  width: 950px;
-  gap: 40px;
   align-items: center;
   margin: 0 auto;
+  justify-content: space-evenly;
 }
 
 .plano-box {
@@ -24,7 +23,6 @@
   grid-template-columns: 1fr 1fr;
   padding-left: 64px;
   padding-top: 32px;
-  justify-items: flex-end;
 }
 
 .prata h3,
@@ -77,12 +75,12 @@
   line-height: 1.333;
   text-transform: uppercase;
   color: var(--cor-0);
-  text-align: end;
+  text-align: right;
   padding-right: 32px;
 }
 
 .valor {
-  text-align: end;
+  text-align: right;
 }
 
 .plano-box span {
@@ -101,4 +99,45 @@
 
 .prata .botao:hover {
   background: var(--cor-9);
+}
+
+@media (max-width: 1000px) {
+  .seguros-planos {
+    justify-content: initial;
+    gap: 40px;
+    display: grid;
+  }
+}
+
+@media (max-width: 600px) {
+  .seguros-bg {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .seguros h2 {
+    padding-bottom: 32px;
+  }
+
+  .seguros-planos {
+    gap: 12px;
+  }
+
+  .plano-box {
+    padding-left: 32px;
+    padding-top: 20px;
+  }
+
+  .plano-box h4,
+  .plano-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .plano-box li {
+    font-size: 1rem;
+  }
+
+  .plano-box li::before {
+    display: none;
+  }
 }
