@@ -6,8 +6,9 @@
   gap: 80px;
 }
 
-.ana-julia-foto img {
+.depoimento img {
   border-radius: 0px;
+  height: 100%;
 }
 
 .depoimento p {
@@ -20,6 +21,23 @@
   font-weight: 900;
   line-height: 1.333;
   max-width: 27ch;
+  position: relative;
+}
+
+.depoimento p::before {
+  content: "“";
+  font-size: 5rem;
+  color: var(--cor-p-2);
+  position: absolute;
+  left: -50px;
+  top: -20px;
+}
+
+.depoimento p::after {
+  content: "”";
+  font-size: 5rem;
+  color: var(--cor-p-2);
+  position: absolute;
 }
 
 .depoimento span {
@@ -34,7 +52,8 @@
   .depoimento {
     grid-template-columns: 1fr;
     gap: 40px;
-    padding-left: 20px;
+    padding-left: 0px;
+    text-align: center;
   }
 
   .depoimento img {
@@ -42,12 +61,18 @@
   }
 
   .depoimento p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     max-width: max-content;
     padding-bottom: 12px;
+    padding-right: 0px;
   }
 
-  .citacao {
+  .depoimento p::before,
+  .depoimento p::after {
+    display: none;
+  }
+
+  .depoimento .citacao {
     padding-bottom: 40px;
   }
 }
