@@ -1,9 +1,9 @@
-.termos {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.clausulas {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .termos h2 {
@@ -22,9 +22,9 @@
     width: auto;
   }
 
-  .termos {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .clausulas {
+    padding-top: 40px;
+    padding-bottom: 40px;
     gap: 32px;
   }
 }
