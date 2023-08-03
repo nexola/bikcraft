@@ -1,0 +1,30 @@
+.termos {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.termos h2 {
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.termos li {
+  padding-bottom: 20px;
+  font-weight: 400;
+  width: 75ch;
+}
+
+@media (max-width: 800px) {
+  .termos li {
+    width: auto;
+  }
+
+  .termos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 32px;
+  }
+}
