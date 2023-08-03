@@ -77,16 +77,20 @@ footer h4 {
     display: none;
   }
 
+  .info ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
   .info li {
     background: var(--cor-11);
     width: fit-content;
     padding: 8px 16px;
     border-radius: 4px;
-    margin-bottom: 16px;
   }
 
   .info li:last-child {
-    margin-bottom: 0;
   }
 
   .redes-sociais img {
