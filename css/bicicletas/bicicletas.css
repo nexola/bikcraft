@@ -1,18 +1,29 @@
 .bicicletas {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 60px;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .bicicletas-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 40px;
 }
 
-.bicicletas p {
-  padding-bottom: 32px;
+.bicicletas-desc {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.bicicletas-desc h2,
+.bicicletas-desc p {
+  grid-column: 1 / -1;
+}
+
+.bicicletas-desc p {
+  margin-bottom: 16px;
 }
 
 .bicicletas p,
@@ -26,7 +37,26 @@
 }
 
 .bicicletas li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bicicletas li:not(:last-child) {
   padding-bottom: 16px;
+}
+
+.bicicletas li img {
+  height: 24px;
+}
+
+.bicicletas-desc h2::before {
+  content: "";
+  display: block;
+  margin-bottom: 8px;
+  width: 12px;
+  height: 8px;
+  background: var(--cor-p-1);
 }
 
 .bicicletas-bg h2 {
@@ -44,25 +74,79 @@
   font-weight: 600;
   line-height: 1.111;
   color: var(--cor-11);
-  padding-bottom: 20px;
 }
 
 .bicicletas-bg {
-  background: var(--cor-11);
+  background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
   padding-top: 60px;
   margin-top: 60px;
   margin-bottom: 60px;
   padding-bottom: 60px;
-  box-shadow: inset 150pt 0px 0 var(--cor-0);
 }
 
-.bicicletas .botao {
-  position: absolute;
-  right: 220px;
+.botao.seta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  place-self: end;
+  gap: 12px;
 }
 
-.bicicletas-box div > img {
+.bicicleta-img img {
   height: 100%;
   object-fit: cover;
-  object-position: right;
+}
+
+.bicicleta-img {
+  position: relative;
+}
+
+.bicicleta-img span {
+  background: var(--cor-12);
+  color: var(--cor-0);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0px 0px 4px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+@media (max-width: 1200px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+
+  .botao.seta::after {
+    display: none;
+  }
+
+  .bicicletas-desc h2 {
+    font-size: 1.75rem !important;
+    margin-bottom: 16px;
+  }
+
+  .bicicletas-desc p {
+    font-size: 1rem;
+  }
+
+  .bicicletas-desc li {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicletas-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+
+  .bicicleta-img span {
+    font-size: 0.875rem;
+  }
 }

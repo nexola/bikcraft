@@ -23,6 +23,23 @@
   background: linear-gradient(#ffb60d, #d59317);
 }
 
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  background: url(../../img/icones/seta.svg);
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+#atual::after {
+  width: 100%;
+}
+
 .titulo-bg {
   background: var(--cor-11);
   padding-top: 60px;
