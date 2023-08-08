@@ -198,6 +198,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .escolha {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 500px) {
   .informacoes {
     grid-template-columns: 1fr;
