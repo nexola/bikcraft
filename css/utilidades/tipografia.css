@@ -19,6 +19,14 @@
   line-height: 1.5;
 }
 
+.font-2-xl {
+  font-family: Roboto;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+
 .font-2-l {
   font-family: Roboto;
   font-size: 1.5rem;

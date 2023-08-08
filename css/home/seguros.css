@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
+  padding-top: 60px;
   justify-content: space-evenly;
 }
 
@@ -88,7 +89,7 @@
   padding-right: 32px;
 }
 
-.botao {
+.plano-box .botao {
   margin-bottom: 32px;
 }
 
@@ -106,6 +107,7 @@
     justify-content: initial;
     gap: 40px;
     display: grid;
+    padding-top: 20px;
   }
 }
 
