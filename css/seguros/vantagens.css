@@ -1,0 +1,76 @@
+#seguros-pagina .seguros-bg {
+  padding-top: 20px;
+}
+
+.seguros-vantagem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.seguros-vantagem-bg {
+  background: var(--cor-12);
+}
+
+.seguros-vantagem-bg h2 {
+  padding-top: 120px;
+  color: var(--cor-0);
+  padding-bottom: 60px;
+}
+
+.seguros-vantagem img {
+  padding-bottom: 8px;
+}
+
+.seguros-vantagem h3 {
+  padding-bottom: 8px;
+  font-weight: 600;
+  color: var(--cor-0);
+}
+
+.seguros-vantagem p {
+  font-weight: 400;
+  color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+  #seguros-pagina .seguros-bg {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  .seguros-vantagem {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .seguros-vantagem-bg h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  #seguros-pagina .seguros-bg {
+    padding-bottom: 20px;
+  }
+
+  .seguros-vantagem {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 0px;
+  }
+
+  .seguros-vantagem-bg h2 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .seguros-vantagem img,
+  .seguros-vantagem h3 {
+    padding-bottom: 4px;
+  }
+}

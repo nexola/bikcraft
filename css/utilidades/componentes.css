@@ -38,6 +38,7 @@
 
 #atual::after {
   width: 100%;
+  background: var(--cor-p-1);
 }
 
 .titulo-bg {
