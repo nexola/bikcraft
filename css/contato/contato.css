@@ -115,12 +115,13 @@
 @media (max-width: 800px) {
   .contato-bg {
     margin-bottom: 60px;
-    box-shadow: inset 0 388px var(--cor-11);
+    box-shadow: inset 0 308px var(--cor-11);
   }
 
   .contato {
     padding-top: 60px;
     flex-direction: column;
+    width: 100%;
   }
 
   .contato-info {
@@ -128,11 +129,6 @@
     border-radius: 4px 4px 0px 0px;
     display: grid;
     grid-template-columns: auto auto;
-  }
-
-  .contato-itens {
-    grid-column: 1;
-    height: fit-content;
   }
 
   .contato-info .redes-sociais {
@@ -152,12 +148,17 @@
 }
 
 @media (max-width: 500px) {
+  .contato-info {
+    display: flex;
+  }
+
   .contato-info .redes-sociais {
-    grid-column: 1;
+    align-self: flex-start;
   }
 
   .formulario {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
 
   .contato {
