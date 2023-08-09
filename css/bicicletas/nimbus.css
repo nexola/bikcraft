@@ -156,7 +156,7 @@
 }
 
 .escolha a:hover h3::before {
-  width: 20px;
+  width: 24px;
   transition: 0.3s;
 }
 
